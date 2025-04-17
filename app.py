@@ -8,17 +8,9 @@ from nltk.stem import WordNetLemmatizer
 
 
 def download_nltk_resources():
-    try:
-        nltk.data.find('tokenizers/punkt')
-    except LookupError:
         nltk.download('punkt')
-    
-    try:
-        nltk.data.find('corpora/stopwords')
-    except LookupError:
         nltk.download('stopwords')
-    
-
+        nltk.download('punkt_tab')
         nltk.download('wordnet')
 
 
