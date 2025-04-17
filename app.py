@@ -18,9 +18,7 @@ def download_nltk_resources():
     except LookupError:
         nltk.download('stopwords')
     
-    try:
-        nltk.data.find('corpora/wordnet')
-    except LookupError:
+
         nltk.download('wordnet')
 
 
